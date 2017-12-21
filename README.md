@@ -1,2 +1,2 @@
-# deeplearning.ai specialisation
-Andrew Ng's Deep Learning specialisation on coursera.
+# deeplearning.ai
+Andrew Ng's Deep Learning Specialisation on Coursera.
