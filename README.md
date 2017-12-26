@@ -12,10 +12,11 @@ AI is transforming multiple industries. After finishing this specialization, you
 
 We will help you master Deep Learning, understand how to apply it, and build a career in AI.
 
-Created by: deeplearning.ai
-Industry Partners: Deep Learning Institute NVIDIA
+Created by: [deeplearning.ai](https://www.deeplearning.ai)
+
+Industry Partners: [Deep Learning Institute NVIDIA](https://www.nvidia.com/en-us/deep-learning-ai/education/)
 
 ### Projects Overview
 You will see and work on case studies in healthcare, autonomous driving, sign language reading, music generation, and natural language processing. You will also build near state-of-the-art deep learning models for several of these applications. In a "Machine Learning flight simulator", you will work through case studies and gain "industry-like experience" setting direction for an ML team.
 
-deeplearning.ai is also partnering with the NVIDIA Deep Learning Institute (DLI) to provide labs in advanced, application-specific topics and to give learners access to GPUs for programming assignments. This will give you an opportunity to build deep learning projects in a cutting-edge, industry-like environment.
+_deeplearning.ai is also partnering with the NVIDIA Deep Learning Institute (DLI) to provide labs in advanced, application-specific topics and to give learners access to GPUs for programming assignments. This will give you an opportunity to build deep learning projects in a cutting-edge, industry-like environment._
