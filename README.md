@@ -20,3 +20,8 @@ Industry Partners: [Deep Learning Institute NVIDIA](https://www.nvidia.com/en-us
 You will see and work on case studies in healthcare, autonomous driving, sign language reading, music generation, and natural language processing. You will also build near state-of-the-art deep learning models for several of these applications. In a "Machine Learning flight simulator", you will work through case studies and gain "industry-like experience" setting direction for an ML team.
 
 _deeplearning.ai is also partnering with the NVIDIA Deep Learning Institute (DLI) to provide labs in advanced, application-specific topics and to give learners access to GPUs for programming assignments. This will give you an opportunity to build deep learning projects in a cutting-edge, industry-like environment._
+
+### Creators
+deeplearning.ai is dedicated to advancing AI by sharing knowledge about the field. We hope to welcome more individuals into deep learning and AI.
+
+deeplearning.ai is Andrew Ng's new venture which amongst others, strives for providing comprehensive AI education beyond borders.
