@@ -2,67 +2,109 @@
 
 1. What does a neuron compute?
 
-    - [ ] A neuron computes the mean of all features before applying the output to an activation function
-    - [ ] A neuron computes a function g that scales the input x linearly (Wx + b)
     - [ ] A neuron computes an activation function followed by a linear function (z = Wx + b)
+
     - [x] A neuron computes a linear function (z = Wx + b) followed by an activation function
 
+    - [ ] A neuron computes a function g that scales the input x linearly (Wx + b)
+
+    - [ ] A neuron computes the mean of all features before applying the output to an activation function
+
+    Note: The output of a neuron is a = g(Wx + b) where g is the activation function (sigmoid, tanh, ReLU, ...).
 
 2. Which of these is the "Logistic Loss"?
 
-    - [x] We have access to a lot more computational power.
-    - [ ] Neural Networks are a brand new field.
-    - [x] We have access to a lot more data.
-    - [x] Deep learning has resulted in significant improvements in important applications such as online advertising, speech recognition, and image recognition.
+    - Check [here](https://en.wikipedia.org/wiki/Cross_entropy#Cross-entropy_error_function_and_logistic_regression).
+
+    Note: We are using a cross-entropy loss function.
+
+3. Suppose img is a (32,32,3) array, representing a 32x32 image with 3 color channels red, green and blue. How do you reshape this into a column vector?
+
+    - `x = img.reshape((32 * 32 * 3, 1))`
+
+4. Consider the two following random arrays "a" and "b":
+
+    ```
+    a = np.random.randn(2, 3) # a.shape = (2, 3)
+    b = np.random.randn(2, 1) # b.shape = (2, 1)
+    c = a + b
+    ```
+
+    What will be the shape of "c"?
+
+    b (column vector) is copied 3 times so that it can be summed to each column of a. Therefore, `c.shape = (2, 3)`.
 
 
-3. Recall this diagram of iterating over different ML ideas. Which of the statements below are true? (Check all that apply.)
+5. Consider the two following random arrays "a" and "b":
 
-    - [x] Being able to try out ideas quickly allows deep learning engineers to iterate more quickly.
-    - [x] Faster computation can help speed up how long a team takes to iterate to a good idea.
-    - [ ] It is faster to train on a big dataset than a small dataset.
-    - [x] Recent progress in deep learning algorithms has allowed us to train good models faster (even without changing the CPU/GPU hardware).
+    ```
+    a = np.random.randn(4, 3) # a.shape = (4, 3)
+    b = np.random.randn(3, 2) # b.shape = (3, 2)
+    c = a * b
+    ```
 
+    What will be the shape of "c"?
 
-4. When an experienced deep learning engineer works on a new problem, they can usually use insight from previous problems to train a good model on the first try, without needing to iterate multiple times through different models. True/False?
+     "*" operator indicates element-wise multiplication. Element-wise multiplication requires same dimension between two matrices. It's going to be an error.
 
-    - [ ] True
-    - [x] False
+6. Suppose you have n_x input features per example. Recall that X=[x^(1), x^(2)...x^(m)]. What is the dimension of X?
 
+    `(n_x, m)`
 
-5. Which one of these plots represents a ReLU activation function?
+    Note: A stupid way to validate this is use the formula Z^(l) = W^(l)A^(l) when l = 1, then we have
 
-    - Check [Wikipedia](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)).
+    - A^(1) = X
+    - X.shape = (n_x, m)
+    - Z^(1).shape = (n^(1), m)
+    - W^(1).shape = (n^(1), n_x)
 
-6. Images for cat recognition is an example of “structured” data, because it is represented as a structured array in a computer. True/False?
+7. Recall that `np.dot(a,b)` performs a matrix multiplication on a and b, whereas `a*b` performs an element-wise multiplication.
 
-    - [ ] True
-    - [x] False
+    Consider the two following random arrays "a" and "b":
 
+    ```
+    a = np.random.randn(12288, 150) # a.shape = (12288, 150)
+    b = np.random.randn(150, 45) # b.shape = (150, 45)
+    c = np.dot(a, b)
+    ```
 
-7. A demographic dataset with statistics on different cities' population, GDP per capita, economic growth is an example of “unstructured” data because it contains data coming from different sources. True/False?
+    What is the shape of c?
 
-    - [ ] True
-    - [x] False
+    `c.shape = (12288, 45)`, this is a simple matrix multiplication example.
 
+8. Consider the following code snippet:
 
-8. Why is an RNN (Recurrent Neural Network) used for machine translation, say translating English to French? (Check all that apply.)
+    ```
+    # a.shape = (3,4)
+    # b.shape = (4,1)
+    for i in range(3):
+      for j in range(4):
+        c[i][j] = a[i][j] + b[j]
+    ```
 
-    - [x] It can be trained as a supervised learning problem.
-    - [ ] It is strictly more powerful than a Convolutional Neural Network (CNN).
-    - [x] It is applicable when the input/output is a sequence (e.g., a sequence of words).
-    - [ ] RNNs represent the recurrent process of Idea->Code->Experiment->Idea->....
+    How do you vectorize this?
 
+    `c = a + b.T`
 
-9. In this diagram which we hand-drew in lecture, what do the horizontal axis (x-axis) and vertical axis (y-axis) represent?
+9. Consider the following code:
 
-    - x-axis is the amount of data
-    - y-axis (vertical axis) is the performance of the algorithm.
+    ```
+    a = np.random.randn(3, 3)
+    b = np.random.randn(3, 1)
+    c = a * b
+    ```
 
+    What will be c?
 
-10. Assuming the trends described in the previous question's figure are accurate (and hoping you got the axis labels right), which of the following are true? (Check all that apply.)
+    This will invoke broadcasting, so b is copied three times to become (3,3), and ∗ is an element-wise product so `c.shape = (3, 3)`.
 
-    - [x] Increasing the training set size generally does not hurt an algorithm’s performance, and it may help significantly.
-    - [x] Increasing the size of a neural network generally does not hurt an algorithm’s performance, and it may help significantly.
-    - [ ] Decreasing the training set size generally does not hurt an algorithm’s performance, and it may help significantly.
-    - [ ] Decreasing the size of a neural network generally does not hurt an algorithm’s performance, and it may help significantly.
+10. Consider the following computation graph.
+
+    ```
+    J = u + v - w
+      = a * b + a * c - (b + c)
+      = a * (b + c) - (b + c)
+      = (a - 1) * (b + c)
+    ```
+
+    Answer: `(a - 1) * (b + c)`
