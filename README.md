@@ -21,7 +21,18 @@ You will see and work on case studies in healthcare, autonomous driving, sign la
 
 _deeplearning.ai is also partnering with the NVIDIA Deep Learning Institute (DLI) to provide labs in advanced, application-specific topics and to give learners access to GPUs for programming assignments. This will give you an opportunity to build deep learning projects in a cutting-edge, industry-like environment._
 
-### Creators
+## Courses
+**COURSE 1:** [Neural Networks and Deep Learning](https://github.com/partoftheorigin/deep_learning_ai_specialization/tree/master/1%20Neural%20Networks%20and%20Deep%20Learning)
+
+**COURSE 2:** [Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization](https://github.com/partoftheorigin/deep_learning_ai_specialization/tree/master/1%20Neural%20Networks%20and%20Deep%20Learning)
+
+**COURSE 3:** [Structuring Machine Learning Projects](https://github.com/partoftheorigin/deep_learning_ai_specialization/tree/master/1%20Neural%20Networks%20and%20Deep%20Learning)
+
+**COURSE 4:** [Convolutional Neural Networks](https://github.com/partoftheorigin/deep_learning_ai_specialization/tree/master/1%20Neural%20Networks%20and%20Deep%20Learning)
+
+**COURSE 5:** [Sequence Models](https://github.com/partoftheorigin/deep_learning_ai_specialization/tree/master/1%20Neural%20Networks%20and%20Deep%20Learning)
+
+## Creators
 deeplearning.ai is dedicated to advancing AI by sharing knowledge about the field. We hope to welcome more individuals into deep learning and AI.
 
 deeplearning.ai is Andrew Ng's new venture which amongst others, strives for providing comprehensive AI education beyond borders.
