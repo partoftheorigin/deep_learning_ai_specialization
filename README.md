@@ -24,7 +24,7 @@ _deeplearning.ai is also partnering with the NVIDIA Deep Learning Institute (DLI
 ## Courses
 **COURSE 1:** [Neural Networks and Deep Learning](https://github.com/partoftheorigin/deep_learning_ai_specialization/tree/master/1%20Neural%20Networks%20and%20Deep%20Learning)
 
-**COURSE 2:** [Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization](https://github.com/partoftheorigin/deep_learning_ai_specialization/tree/master/1%20Neural%20Networks%20and%20Deep%20Learning)
+**COURSE 2:** [Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization](https://github.com/partoftheorigin/deep_learning_ai_specialization/tree/master/2%20Improving%20Deep%20Neural%20Networks-%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization)
 
 **COURSE 3:** [Structuring Machine Learning Projects](https://github.com/partoftheorigin/deep_learning_ai_specialization/tree/master/1%20Neural%20Networks%20and%20Deep%20Learning)
 
